@@ -26,10 +26,10 @@ export async function generateEmailBody(
 
   switch (type) {
     case Notification.WELCOME:
-      subject = `Welcome to PriceChecker for ${shortenedTitle}`;
+      subject = `Welcome to PriceSage for ${shortenedTitle}`;
       body = `
         <div>
-          <h2>Welcome to PriceChecker 🚀</h2>
+          <h2>Welcome to PriceSage 🚀</h2>
           <p>You are now tracking ${product.title}.</p>
           <p>Here's an example of how you'll receive updates:</p>
           <div style="border: 1px solid #ccc; padding: 10px; background-color: #f8f8f8;">
@@ -85,7 +85,7 @@ const transporter = nodemailer.createTransport({
   service: 'hotmail',
   port: 2525,
   auth: {
-    user: 'PriceTracker.pt@outlook.com',
+    user: 'pricesagepro@outlook.com',
     pass: process.env.EMAIL_PASSWORD,
   },
   maxConnections: 1
@@ -93,7 +93,7 @@ const transporter = nodemailer.createTransport({
 
 export const sendEmail = async (emailContent: EmailContent, sendTo: string[]) => {
   const mailOptions = {
-    from: 'PriceTracker.pt@outlook.com',
+    from: 'pricesagepro@outlook.com',
     to: sendTo,
     html: emailContent.body,
     subject: emailContent.subject,

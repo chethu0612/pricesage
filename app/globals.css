@@ -23,7 +23,7 @@
   }
 
   .head-text {
-    @apply mt-4 text-6xl leading-[72px] font-thin tracking-[-1.2px] text-white;
+    @apply mt-4 text-6xl leading-[72px] font-normal tracking-[-1.2px] text-white;
   }
 
   .section-text {

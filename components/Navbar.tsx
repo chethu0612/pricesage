@@ -16,7 +16,7 @@ const Navbar = () => {
           />
 
           <p className="nav-logo">
-            <span className="text-white">Price</span><span className="text-blue-200">Checker</span>
+            <span className="text-white">Price</span><span className="text-red-400">Sage</span>
           </p>
         </Link>
 
